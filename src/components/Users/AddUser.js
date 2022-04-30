@@ -1,19 +1,22 @@
 import React from "react";
 
+import Card from "../UI/Card";
+
 const AddUser = props => {
     const addUserHandler = (event) => {
         event.preventDefault();
-
     }
 
     return (
-        <form onSubmit={addUserHandler}>
-            <label htmlFor={"Username"}>UserName</label>
-            <input id={"Username"} type={"text"}></input>
-            <label htmlFor={"age"}>Age (Years)</label>
-            <input id={"age"} type={"number"}></input>
-            <button type={"submit"} >Add User</button>
-        </form>
+        <Card>
+            <form onSubmit={addUserHandler}>
+                <label htmlFor={"Username"}>UserName</label>
+                <input id={"Username"} type={"text"}></input>
+                <label htmlFor={"age"}>Age (Years)</label>
+                <input id={"age"} type={"number"}></input>
+                <button type={"submit"}>Add User</button>
+            </form>
+        </Card>
     )
 }
 
