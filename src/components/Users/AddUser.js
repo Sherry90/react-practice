@@ -9,7 +9,7 @@ const AddUser = props => {
     }
 
     return (
-        <Card>
+        <Card className={classes.input}>
             <form onSubmit={addUserHandler}>
                 <label htmlFor={"Username"}>UserName</label>
                 <input id={"Username"} type={"text"}></input>
